@@ -9,7 +9,7 @@ const octokit = new Octokit({
 
 export const getUserList = async () => {
   const response = await octokit.request(
-    'https://api.github.com/users?since=3&per_page=100',
+    'https://api.github.com/users?since=1&per_page=100',
   );
   return response.data;
 };
